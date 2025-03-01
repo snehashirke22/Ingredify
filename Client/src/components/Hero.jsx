@@ -14,7 +14,7 @@ const Hero = () => {
         </div>
         <h1>Turn Your Ingredients into <span style={{color: '#0d492d'}}>Delicious Recipes!</span></h1>
         <p>Discover personalized recipes based on ingredients you already have. Turn everyday ingredients into extraordinary meals with our AI-powered recipe generator.</p>
-        <button className="generate-button">
+        <button className="generate-button" onClick={() => navigate("/recipe-generator")}>
           Generate Recipes
           <IoArrowForward className="button-icon" />
         </button>
