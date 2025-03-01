@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/Hero';
-import MarqueeTape from '../components/marqueetape';
+import MarqueeTape from '../components/MarqueeTape';
 import Categories from '../components/Categories';
 import PopularRecipes from '../components/PopularRecipes';
 import Features from '../components/Features';
