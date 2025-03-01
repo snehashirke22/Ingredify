@@ -3,8 +3,11 @@ import '../styles/Hero.css'
 import { IoArrowForward } from "react-icons/io5";
 import hero from '../assets/hero.png'
 import { BsStars } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+
+  const navigate = useNavigate();
   return (
     <section className="hero">
       <div className="hero-content">
