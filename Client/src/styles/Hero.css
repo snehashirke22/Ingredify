@@ -1,0 +1,113 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 64px 32px;
+    gap: 48px;
+    background-color: #f0f0f0;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 700px;
+    margin-left: 5%;
+}
+
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: white;
+    padding: 8px 16px;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.hero-tag span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #0d492d;
+}
+
+.tag-icon {
+    width: 16px;
+    height: 16px;
+    color: #fbbf24;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #4b5563;
+    margin-bottom: 32px;
+}
+
+.generate-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f8c519;
+    color: #333;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.generate-button:hover {
+    background: #e6c200;    
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.06);
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 600px;
+    margin-top: 2%;
+}
+
+.hero-image img {
+    width: 75%;
+    height: 50%;
+    border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 150px 16px;
+    }
+    .hero-content {
+        margin-left: 0;
+    }
+    .hero-content h1 {
+        font-size: 38px;
+    }
+    .hero-content p{
+        font-size: 18px;
+    }
+
+    .generate-button {
+        margin: 0 auto;
+    }
+}

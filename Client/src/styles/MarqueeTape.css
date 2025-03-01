@@ -1,0 +1,31 @@
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f8c519;
+    white-space: nowrap;
+    padding: 10px 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .marquee-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #054d19;
+    justify-content: center;
+  }
+  
+  .leaf-icon {
+    color: #054d19;
+    font-size: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .marquee-container {
+        display: none;
+    }
+  }
+  

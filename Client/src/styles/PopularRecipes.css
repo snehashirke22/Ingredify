@@ -1,0 +1,120 @@
+.popular-recipes-container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #383838;
+    margin-left: 5%;
+}
+
+.view-all-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 8%;
+    background: #f8c519;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.view-all-button:hover {
+    background: #e6c200;
+}
+
+.recipes-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: 5%;
+    margin-right: 8%;
+    gap: 10px;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #999 #f8f8f8;
+}
+
+.recipes-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.recipes-scroll-container::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 10px;
+}
+
+.recipe-card {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 250px;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+.recipe-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recipe-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.recipe-info {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.error-message {
+    text-align: center;
+    font-size: 18px;
+    color: #d9534f;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+
+@media (max-width: 768px) {
+  .header-row {
+      flex-direction: column;
+  }
+  .section-title{
+      margin-left: 0;
+      margin-right:40px;
+      font-size: 30px;
+  }
+  .recipes-scroll-container{
+      margin-left: 0;
+  }
+  .view-all-button{
+      margin-right: 40px;
+      margin-bottom: 10px;
+      font-size: 16px;
+  }
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+.feature-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container {
+  background-color: #f8c519;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1200px;
+  padding: 40px;
+  margin-top: 2%;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-left: 5%;
+}
+
+.feature-image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+  position: absolute;
+  bottom: -24px;
+  right: -24px;
+  width: 160px;
+  height: 128px;
+  background-color: #0d492d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f8c519;
+  font-size: 26px;
+  z-index: 10;
+  font-family: "Caveat Brush", serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+  margin-right: 5%;
+}
+
+
+.features-title {
+  font-size: 36px;
+  font-weight: 600;
+  color: #383838;
+}
+
+.features-title .highlight {
+  color: #0d492d;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.icon-container {
+  background-color: #0d492d;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #f8c519;
+}
+
+.feature-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+
+
+@media (max-width: 768px) {
+  .features-title{
+    font-size: 30px;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+    .content-container {
+      text-align: left;
+    }
+    .image-container {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .badge {
+      bottom: -44px;
+      right: -24px;
+      width: 130px;
+      height: 120px;
+      font-size: 22px;
+    }
+    .content-container {
+      width: 100%;
+      max-width: 350px;
+      margin: 0 auto;
+      margin-top: 2%;
+    }
+}

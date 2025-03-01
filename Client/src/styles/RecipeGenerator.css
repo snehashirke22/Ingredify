@@ -1,0 +1,110 @@
+body{
+  background-color: #f0f0f0;
+}
+
+.generate-recipe-container {
+  margin-top: 8%;
+}
+
+.generate-recipe-page-headings{
+  text-align: center; 
+}
+.form-container {
+  margin: auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  max-width: 800px;
+  background-color: #ffffff;
+  padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+  
+  .form-left, .form-right {
+    width: 48%;
+  }
+  
+  .inputs {
+    background-color: #ececec;
+    background-color: #f5f8e6;
+    color: #313132;
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  
+  .dietary-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .recipe-generate-button {
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+    background-color: #0d492d;
+    color: white;
+    margin-top: 2%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  .recipe-generate-button:hover{
+    background-color: #0d492dec;
+  }
+  .recipe-generate-button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .recipe-result {
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    }
+  
+  .generate-recipe-image {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    height: 50%;
+  }
+  .note-box {
+    background-color: #fff8dc;
+    border: 1px solid #ffcc00;
+    color: #a67c00;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    max-width: 90%;
+    margin: 10px auto;
+  }
+
+  @media (max-width: 768px) {
+    .generate-recipe-container {
+      margin-top: 28%;
+    }
+    .form-container{
+      flex-direction: column;
+      max-width: 270px;
+    }
+    .form-left, .form-right {
+      width: 95%;
+      margin: 0 auto;
+    }
+  .recipe-generate-button{
+    width: 50%;
+    margin-top: 5%;
+  }
+  }
