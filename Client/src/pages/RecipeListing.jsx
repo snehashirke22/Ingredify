@@ -20,7 +20,7 @@ const RecipeListing = () => {
   // Function to fetch recipes
   const fetchRecipes = async (query = "", pageNum = 1) => {
     try {
-      let url = `http://localhost:5000/api/recipes?page=${pageNum}`;
+      let url = `https://ingredify-server.onrender.com/api/recipes?page=${pageNum}`;
       if (query) url += `&query=${query}`;
 
       const response = await axios.get(url);

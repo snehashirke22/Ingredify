@@ -6,18 +6,18 @@ import { FaClock, FaUsers } from "react-icons/fa";
 
 const PopularRecipes = () => {
   const [recipes, setRecipes] = useState([]);
-  const [error, setError] = useState(false); // State to track API errors
+  const [error, setError] = useState(false); 
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/");
+        const response = await axios.get("https://ingredify-server.onrender.com/api/");
         setRecipes(response.data);
-        setError(false); // Reset error if request is successful
+        setError(false); 
       } catch (error) {
         console.error("Error fetching recipes:", error);
-        setError(true); // Set error state if API request fails
+        setError(true);
       }
     };
 

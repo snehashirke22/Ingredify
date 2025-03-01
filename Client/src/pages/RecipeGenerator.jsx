@@ -20,10 +20,10 @@ const RecipeGenerator = () => {
 
   const handleGenerateRecipe = async () => {
     setLoading(true);
-    setRecipe(null); // Clear previous recipe
+    setRecipe(null); 
 
     try {
-      const response = await axios.post("http://localhost:5000/api/generate-recipe", {
+      const response = await axios.post("https://ingredify-server.onrender.com/api/generate-recipe", {
         ingredients,
         mealType,
         cuisine,

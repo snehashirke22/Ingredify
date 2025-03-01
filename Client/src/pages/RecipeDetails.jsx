@@ -7,24 +7,24 @@ const RecipeDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [recipe, setRecipe] = useState(null);
-  const [error, setError] = useState(""); // To store error message
+  const [error, setError] = useState(""); 
 
   useEffect(() => {
     const fetchRecipeDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/recipe-details?id=${id}`
+          `https://ingredify-server.onrender.com/api/recipe-details?id=${id}`
         );
         setRecipe(response.data);
       } catch (error) {
         console.error("Error fetching recipe details:", error);
-        setError("No details to show!"); // Set error message
+        setError("No details to show!"); 
       }
     };
     fetchRecipeDetails();
   }, [id]);
 
-  if (error) return <p className="error-message">{error}</p>; // Show error message
+  if (error) return <p className="error-message">{error}</p>; 
   if (!recipe) return <p>Loading...</p>;
 
   return (
